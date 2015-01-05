@@ -3,8 +3,8 @@ Laravel 5 Facebook PHP SDK 4 wrapper
 
 Extension of PHP SDK 4 for Laravel's custom session handling in L5.
 
-INSTALLATION
-===================================
+Installation
+================
 
 1. Get the repository files.
 2. Go to your project folder and open up composer.json with your favorite editor
@@ -17,8 +17,8 @@ INSTALLATION
 
 Note: The official Facebook PHP SDK 4 must be installed and autoloaded too of course!
 
-LICENSE
-====================================
+License
+================
 MIT license.
 Andras Rapli, 
 http://rapliandras.hu
