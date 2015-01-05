@@ -15,6 +15,8 @@ INSTALLATION
 7. Set up a route for the method `FacebookController@login` to check the result.
 8. Enjoy.
 
+Note: The official Facebook PHP SDK 4 must be installed and autoloaded too of course!
+
 LICENSE
 ====================================
 MIT license.
