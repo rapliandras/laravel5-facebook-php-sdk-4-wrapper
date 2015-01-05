@@ -8,12 +8,17 @@ class FacebookRedirectLoginHelper extends FRLH
 {
 	protected function isValidRedirect()
 	{
-		return $this->getCode() && \Input::get('state', null) == $this->state;
+		return $this->getCode() && (\Input::get('state', null) == $this->state);
 	}
 
 	protected function getCode()
 	{
 		return \Input::get('code', null);
+	}
+
+	protected function getSessionKey()
+	{
+		return 'facebook.state';
 	}
 
 	protected function storeState($state)
@@ -26,8 +31,4 @@ class FacebookRedirectLoginHelper extends FRLH
 		return $this->state = \Session::get($this->getSessionKey(), null);
 	}
 
-	protected function getSessionKey()
-	{
-		return 'facebook.state';
-	}
 }
