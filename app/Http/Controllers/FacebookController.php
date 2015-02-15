@@ -11,7 +11,7 @@ use RapliAndras\Facebook\Laravel\FacebookRedirectLoginHelper;
 
 class FacebookController extends Controller{
 
-	public function login(\Illuminate\Cookie\CookieJar $cookieJar, Request $request)
+	public function login(\Illuminate\Cookie\CookieJar $cookieJar, \Request $request)
 	{
 		// Replace 1234 with your APP_ID
 		// Replace 123456789 with your APP_SECRET
